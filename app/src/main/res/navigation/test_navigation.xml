@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:label="Тесты"
+    android:id="@+id/test_navigation"
+    app:startDestination="@id/navigation_test_list">
+    <fragment
+        android:id="@+id/navigation_test_list"
+        android:name="com.example.testapplication.ui.dashboard.DashboardFragment"
+        android:label="Уроки"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/navigation_test"
+        android:name="com.example.testapplication.TestFragment"
+        tools:layout="@layout/fragment_test" />
+</navigation>
